@@ -1,0 +1,102 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 30px;
+    color: rgb(37, 37, 37);
+}
+
+#fishList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#tipList {
+    margin: 75px auto;
+    padding-bottom: 75px;
+    border-bottom: 2px solid black;
+    width: 75%;
+    
+    
+}
+
+#locationList {
+    margin: 100px 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+li:last-of-type {
+ margin-bottom: 20px;
+}
+
+
+.fish {
+    height: 400px;
+    border: 3px solid rgb(179, 179, 179);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 350px;
+    transition: .3s transform ease;
+    
+}
+
+.fish:hover {
+    transform:scale(1.02);
+
+}
+
+.fish h2 {
+    text-align: center;
+}
+
+li.tip {
+
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+ul.tips {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+span.tip-topic {
+    font-weight: 600;
+}
+
+section.location {
+    text-align: center;
+}
+
+section.location h3 {
+    margin-bottom: 10px;
+}
+
+section.location p {
+    margin: 0 0 25px 0;
+}
