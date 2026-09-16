@@ -8,7 +8,7 @@ export const mostHolyFish = () => {
         if (fish.length % 3 === 0) {
             holyFish += `
             <div class="fish">    
-                <h2>${fish.name} the <br>  ${fish.species}</h2>
+                <h2>${fish.name} the <br>${fish.species}</h2>
                     <ul>
                         <li>Length: ${fish.length}</li>
                         <li>Location: ${fish.location}</li>
@@ -24,12 +24,12 @@ export const mostHolyFish = () => {
 
 export const soldierFish = () => {
     // 5, 10, 15, 20, 25, etc... fish
-    let soldierFish = "<p>"
+    let soldierFish = ""
     for (const fish of database.fish) {
         if (fish.length % 5 === 0) {
             soldierFish += `
             <div class="fish">    
-                <h2>${fish.name} the <br> ${fish.species}</h2>
+                <h2>${fish.name} the <br>${fish.species}</h2>
                     <ul>
                         <li>Length: ${fish.length}</li>
                         <li>Location: ${fish.location}</li>
@@ -45,12 +45,12 @@ export const soldierFish = () => {
 
 export const regularFish = () => {
     // Any fish not a multiple of 3 or 5
-    let regularFish = "<p>"
+    let regularFish = ""
     for (const fish of database.fish) {
         if (fish.length % 3 != 0 && fish.length % 5 != 0) {
             regularFish += `
             <div class="fish">    
-                <h2>${fish.name} the <br> ${fish.species}</h2>
+                <h2>${fish.name} the <br>${fish.species}</h2>
                     <ul>
                         <li>Length: ${fish.length}</li>
                         <li>Location: ${fish.location}</li>
